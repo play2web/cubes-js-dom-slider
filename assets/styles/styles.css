@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.slider {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    box-shadow: 8px 8px 15px #bbb;
+    border-radius: 3px;
+}
+
+.slider-images {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.slider-images img {
+    display: block;
+}
+
+.slider-thumbs {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin: auto;
+}
+
+.slider-thumbs img {
+    width: 90px;
+}
+
+.slider-thumbs img.active {
+    border: 2px solid red;
+}
